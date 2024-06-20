@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script> 
+    $(document).ready(function()
+    {
+        $("#one").click(function(){
+            $("#two").slideDown("slow");
+        });
+    });
+    </script>
+    <style>
+        #one,#two{
+            padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+        }
+        #two{
+            padding: 50px;
+  display: none;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Slide down
+    </p>
+    
+    <div id="one">Hiii</div>
+    <div id="two">welcome</div>
+
+    
+</body>
+</html>
